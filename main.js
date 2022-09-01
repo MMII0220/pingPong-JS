@@ -94,10 +94,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // Тут будет остальное
     if (a == 5) {
-      playerRight.style.display = "block";
+      playerLeft.style.display = "block";
       finish.style.display = "block";
     } else if (b == 5) {
-      playerLeft.style.display = "block";
+      playerRight.style.display = "block";
       finish.style.display = "block";
     } else {
       // Если платформы на предыдущем шаге куда-то двигались — пусть продолжают двигаться
