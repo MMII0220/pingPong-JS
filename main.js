@@ -145,9 +145,9 @@ window.addEventListener("DOMContentLoaded", () => {
         ball.resetting = true;
 
         if (ball.x < 0) {
-          playerOne.innerHTML = Number(++a);
+          // playerOne.innerHTML = Number(++a);
         } else if (ball.x > canvas.width) {
-          playerTwo.innerHTML = Number(++b);
+          // playerTwo.innerHTML = Number(++b);
         }
 
         // Даём секунду на подготовку игрокам
@@ -198,10 +198,10 @@ window.addEventListener("DOMContentLoaded", () => {
       // Отслеживаем нажатия клавиш
       document.addEventListener('keydown', (e) => {
         // Если нажата клавиша вверх,
-        if (e.keyCode == 38) {
+        if (e.keyCode == 40) {
           // то двигаем правую платформу вверх
           rightPaddle.dy = -paddleSpeed;
-        } else if (e.keyCode == 40) { // Если нажата клавиша вниз,
+        } else if (e.keyCode == 38) { // Если нажата клавиша вниз,
           // то двигаем правую платформу вниз
           rightPaddle.dy = paddleSpeed;
         }
